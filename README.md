@@ -1,1 +1,1 @@
-# fetch_REST_API
+El ejercicio se encuentra en el archivo fetch.js 
