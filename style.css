@@ -1,35 +1,70 @@
-body {
-    margin: 0;
-    font-family: 'Karla', sans-serif;
-    background-color: #14141c;
-    color: white;
-    text-align: center;
-    padding: 40px;
+form {
+    width: 200px;
+    margin: 20px auto;
 }
 
-.container {
+input {
+    width: 100%;
+    padding: 10px;
+}
+
+.poke-card {
+    position: relative;
+    height: fit-content;
+    font-family: 'Roboto Mono', monospace;
+    max-width: 300px;
+    border-radius: 4px;
+    color: #816ae6;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid rgb(247, 48, 171);
+}
+
+.poke-card::before {
+    content: '';
+    background: radial-gradient(rgb(211, 34, 131) 33%, transparent 33%);
+    background-size: 3px 3px;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: -1;
+}
+
+.img-container {
+    position: relative;
+    width: 180px;
+    margin: 10px auto;
+}
+
+.poke-stats div {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 5px;
+    font-size: 18px;
+}
+
+
+.poke-img {
+    width: 180px;
+    border-radius: 50%;
+}
+.container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #1a1b26;
     padding: 20px;
     border-radius: 20px;
 }
-
-.row {
-    margin: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-    padding: 20px;
-    width: 100%;
-}
-
 .btn {
-    background-color: #fa6400;
+    background-color: #fd79b7;
     border: 0px solid transparent;
     border-radius: .25rem;
     cursor: pointer;
@@ -42,6 +77,5 @@ body {
 
 .btn:hover,
 .btn:focus {
-    background-color: #fb8332;
-    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-}
+    background-color: #fd79b7;
+    box-shadow: rgba(236, 2, 131, 0.1) 0 4px 12px;}
